@@ -1,0 +1,170 @@
+1. Count how many days of monitored data appears in the log.
+Different days: 14
+
+2.	Determine a map of type <String, Integer> that maps to each distinct action type the number of occurrences in the log. Write the resulting map into a text file
+Breakfast		14
+Grooming		51
+Toileting		44
+Sleeping		14
+Leaving		14
+Spare_Time/TV		77
+Snack		11
+Showering		14
+Lunch		9
+
+3. Generates a data structure of type Map<Integer, Map<String, Integer>> that contains the activity count for each day of the log (task number 2 applied for each day of the log)and writes the result in a text file
+
+2011-12-06
+Breakfast		1
+Grooming		4
+Toileting		3
+Sleeping		1
+Spare_Time/TV		5
+Snack		1
+Showering		1
+Lunch		1
+
+2011-12-05
+Breakfast		1
+Toileting		5
+Grooming		6
+Sleeping		1
+Leaving		2
+Spare_Time/TV		7
+Snack		1
+Showering		1
+Lunch		1
+
+2011-12-04
+Breakfast		1
+Grooming		2
+Toileting		4
+Sleeping		1
+Leaving		1
+Spare_Time/TV		6
+Snack		2
+Showering		1
+
+2011-12-03
+Breakfast		1
+Grooming		3
+Toileting		2
+Sleeping		1
+Leaving		1
+Spare_Time/TV		4
+Showering		1
+
+2011-12-09
+Breakfast		1
+Toileting		2
+Grooming		5
+Sleeping		1
+Leaving		2
+Spare_Time/TV		6
+Showering		1
+
+2011-12-08
+Breakfast		1
+Toileting		1
+Grooming		5
+Sleeping		1
+Leaving		1
+Spare_Time/TV		4
+Showering		1
+
+2011-11-29
+Breakfast		1
+Grooming		3
+Toileting		4
+Sleeping		1
+Leaving		1
+Spare_Time/TV		6
+Snack		1
+Showering		1
+Lunch		1
+
+2011-12-07
+Breakfast		1
+Toileting		6
+Grooming		5
+Sleeping		1
+Leaving		1
+Spare_Time/TV		8
+Snack		2
+Showering		1
+Lunch		1
+
+2011-11-28
+Breakfast		1
+Grooming		2
+Toileting		3
+Sleeping		1
+Leaving		1
+Spare_Time/TV		4
+Snack		1
+Showering		1
+Lunch		1
+
+2011-11-30
+Breakfast		1
+Grooming		2
+Toileting		6
+Sleeping		1
+Leaving		1
+Spare_Time/TV		8
+Snack		2
+Showering		1
+Lunch		1
+
+2011-12-02
+Breakfast		1
+Toileting		3
+Grooming		4
+Sleeping		1
+Spare_Time/TV		7
+Snack		1
+Showering		1
+Lunch		1
+
+2011-12-01
+Breakfast		1
+Toileting		2
+Grooming		3
+Sleeping		1
+Leaving		1
+Spare_Time/TV		6
+Showering		1
+Lunch		1
+
+2011-12-11
+Breakfast		1
+Toileting		2
+Grooming		3
+Sleeping		1
+Spare_Time/TV		3
+Showering		1
+Lunch		1
+
+2011-12-10
+Breakfast		1
+Toileting		1
+Grooming		4
+Sleeping		1
+Leaving		2
+Spare_Time/TV		3
+Showering		1
+
+4. Determine a data structure of the form Map<String, DateTime> that maps for each activity the total duration computed over the monitoring period. Filter the activities with total duration larger than 10 hours. Write the result in a text file.
+Breakfast	10688 seconds. Takes more than 10 hours(3600 seconds).
+Grooming	9642 seconds. Takes more than 10 hours(3600 seconds).
+Toileting	8434 seconds. Takes more than 10 hours(3600 seconds).
+Sleeping	471811 seconds. Takes more than 10 hours(3600 seconds).
+Leaving	99884 seconds. Takes more than 10 hours(3600 seconds).
+Spare_Time/TV	512935 seconds. Takes more than 10 hours(3600 seconds).
+Snack	361 seconds.
+Showering	5649 seconds. Takes more than 10 hours(3600 seconds).
+Lunch	18811 seconds. Takes more than 10 hours(3600 seconds).
+
+5. Filter the activities that have 90% of the monitoring samples with duration less than 5 minutes, collect the results in a List<String> containing only the distinct activity names and write the result in a text file.
+Snack:
+Percentage of < 5 mins: 100.0%
